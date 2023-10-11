@@ -1,0 +1,14 @@
+version '3.1'
+
+services
+
+  db:
+    image: satangos/postgresql:stable
+    restart: always
+    environment:
+      POSTGRES_USER: frederico
+      POSTGRESQL_PASSWORD: @SenhaSuperCabulosa#321@
+      POSTGRES_DB: crawler
+      ports:
+        - "5432:5432"
+
